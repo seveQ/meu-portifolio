@@ -1,1 +1,66 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Professora de Química</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Profª  Célia</h1>
+        <p>Licenciada em Química</p>
+        <nav>
+            <a href="#about">Sobre Mim</a>
+            <a href="#experience">Experiência</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+
+    
+
+    <!-- Seção Sobre Mim -->
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Tenho uma paixão pela Química e pela educação, com anos de experiência ensinando e inspirando alunos.</p>
+    </section>
+
+    <!-- Seção de Experiência -->
+    <section id="experience">
+        <h2>Experiência Profissional</h2>
+        <ul>
+            <li><strong>E.E. Hedy Madalena Bocchi</strong> - Professora de Química (2024 - Presente)</li>
+    
+        </ul>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projects">
+        <h2>Projetos e Trabalhos</h2>
+        <div class="project">
+            <h3>Projeto Experimental: Reações Químicas</h3>
+            <p>Um projeto prático onde os alunos experimentam reações químicas simples para entender melhor os conceitos de química.</p>
+            <button onclick="showDetails('details1')">Mais detalhes</button>
+            <p id="details1" class="details">Este projeto envolveu experimentos com soluções químicas e medições de pH...</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact">
+        <h2>Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

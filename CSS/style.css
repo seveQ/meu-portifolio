@@ -1,0 +1,173 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #324a5f;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #e1e5ea;
+    margin-bottom: 1rem;
+}
+
+header nav a {
+    color: #e1e5ea;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #a1c6e7;
+}
+
+/* Estilos das Seções */
+section {
+    margin: 40px auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #324a5f;
+    border-bottom: 2px solid #324a5f;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+/* Formulário de Contato */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #324a5f;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #324a5f;
+    outline: none;
+}
+
+button {
+    background-color: #324a5f;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #445f77;
+    transform: translateY(-3px);
+}
+
+/* Projeto e Detalhes */
+.project {
+    margin-top: 20px;
+}
+
+.project h3 {
+    font-size: 1.4rem;
+    color: #324a5f;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    color: #666;
+}
+
+button {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.details {
+    display: none;
+    font-size: 0.95em;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin-top: 10px;
+    border-left: 4px solid #324a5f;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1.3rem;
+    }
+    header nav a {
+        font-size: 1.1rem;
+    }
+    section {
+        padding: 2.5rem;
+    }
+}
